@@ -4,9 +4,6 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x7j6f"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_d2vt8"]
-animations = []
-
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("mov_body", "sprite", "camera")]
 y_sort_enabled = true
 collision_layer = 2
@@ -37,7 +34,3 @@ drag_left_margin = 0.05
 drag_top_margin = 0.05
 drag_right_margin = 0.05
 drag_bottom_margin = 0.05
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_d2vt8")
-animation = &""
