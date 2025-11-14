@@ -16,6 +16,7 @@ run/main_scene="res://content/ui/main_menu/main_menu.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
 run/max_fps=120
 boot_splash/bg_color=Color(0.109804, 0.105882, 0.105882, 1)
+config/icon="res://icon.svg"
 
 [audio]
 
@@ -74,4 +75,6 @@ MoveDown={
 
 [rendering]
 
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 textures/canvas_textures/hdri_mode=0

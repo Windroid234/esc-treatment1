@@ -50,3 +50,6 @@ text = "Play"
 layout_mode = 2
 theme_override_colors/font_color = Color(0.999999, 0.820292, 0.802184, 1)
 text = "Quit"
+
+[connection signal="pressed" from="ButtonsBox/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="ButtonsBox/QuitButton" to="." method="_on_quit_button_pressed"]
