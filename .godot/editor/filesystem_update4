@@ -1,5 +1,2 @@
-res://door.gd
 res://room_1.tscn
 res://content/ui/ui_theme.tres
-res://door.tscn
-res://content/entity/player/player.tscn
