@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763140541
+::res://::1763140983
 door.gd::GDScript::908582878560824339::1763138386::0::1::::<>Area2D<><>0<>0<><>::
 door.tscn::PackedScene::7462812676297782837::1763138386::0::1::::<><><>0<>0<><>::uid://m7ehyyno1thj::::res://door.gd<>uid://bawamyypa2s4e::::res://door/door-1.png
 first_level.tscn::PackedScene::8276642818546415081::1763118416::0::1::::<><><>0<>0<><>::uid://c4xdanqs688qd::::res://content/first_level/first_level.tscn
@@ -7,12 +7,12 @@ Idle.png::CompressedTexture2D::2890108387361361867::1763140541::1763140541::1:::
 Inside_C.png::CompressedTexture2D::5674790321432572867::1763121921::1763121921::1::::<><><>0<>0<>67f348e78fc1fb111def49cbc55066e4<>res://.godot/imported/Inside_C.png-ea7911097d3e123af6f3b047575ef3e4.ctex::
 main_menu.tscn::PackedScene::4077919575977881323::1763122509::0::1::::<><><>0<>0<><>::
 room_1.tscn::PackedScene::768308993932482332::1763138059::0::1::::<><><>0<>0<><>::uid://cm3575oq0frjv::::res://Inside_C.png<>uid://c3xi6gmcnve3f::::res://content/entity/player/player.tscn
-test.tscn::PackedScene::612850826894185950::1763136672::0::1::::<><><>0<>0<><>::uid://cm3575oq0frjv::::res://Inside_C.png<>uid://c3xi6gmcnve3f::::res://content/entity/player/player.tscn<>uid://delbo1hsthreb::::res://door.tscn
+test.tscn::PackedScene::612850826894185950::1763140575::0::1::::<><><>0<>0<><>::uid://cm3575oq0frjv::::res://Inside_C.png<>uid://c3xi6gmcnve3f::::res://content/entity/player/player.tscn<>uid://delbo1hsthreb::::res://door.tscn
 ::res://addons/::1763118416
 ::res://addons/godot-rapier2d/::1763118416
 godot-rapier2d.gdextension::GDExtension::860326987334646388::1763118416::0::1::::<><><>0<>0<><>::
 THIRDPARTY.txt::TextFile::-1::1763118415::0::1::::<><><>0<>0<><>::
-::res://addons/godot-rapier2d/bin/::1763140416
+::res://addons/godot-rapier2d/bin/::1763140971
 ::res://addons/godot-rapier2d/bin/libphysics_server_rapier2d.ios.template_debug.framework/::1763118415
 ::res://addons/godot-rapier2d/bin/libphysics_server_rapier2d.ios.template_release.framework/::1763118415
 ::res://addons/godot-rapier2d/bin/libphysics_server_rapier2d.macos.template_debug.framework/::1763118415
@@ -24,7 +24,7 @@ THIRDPARTY.txt::TextFile::-1::1763118415::0::1::::<><><>0<>0<><>::
 ::res://addons/imgui-godot/::1763118416
 imgui-godot-native.gdextension::GDExtension::4120062672281317713::1763118416::0::1::::<><><>0<>0<><>::
 plugin.cfg::TextFile::-1::1763118416::0::1::::<><><>0<>0<><>::
-::res://addons/imgui-godot/bin/::1763140419
+::res://addons/imgui-godot/bin/::1763140974
 ::res://addons/imgui-godot/bin/libimgui-godot-native.macos.debug.framework/::1763118416
 ::res://addons/imgui-godot/bin/libimgui-godot-native.macos.release.framework/::1763118416
 ::res://addons/imgui-godot/data/::1763136708
@@ -60,9 +60,9 @@ damage_numbers.tscn::PackedScene::1681538009349514080::1763118416::0::1::::<><><
 ::res://content/entity/player/::1763140348
 player.gd::GDScript::1595390007477630088::1763140348::0::1::::Player<>Node2D<><>0<>0<><>::
 player.tscn::PackedScene::6786151106934495237::1763136672::0::1::::<><><>0<>0<><>::uid://wy23toqiwmx1::::res://content/entity/player/player.gd<>uid://bawamyypa2s4e::::res://door/door-1.png
-::res://content/global/::1763140348
+::res://content/global/::1763140951
 audio_bus_layout.tres::AudioBusLayout::9044126520073408996::1763118416::0::1::::<><><>0<>0<><>::
-g_game_globals.gd::GDScript::633568954108631455::1763140348::0::1::::GGameGlobals<>Node<><>0<>0<><>::
+g_game_globals.gd::GDScript::633568954108631455::1763140951::0::1::::GGameGlobals<>Node<><>0<>0<><>::
 g_game_root.tscn::PackedScene::1007493848061028716::1763138386::0::1::::<><><>0<>0<><>::res://content/global/g_game_globals.gd<>res://content/ui/title_screen/title_screen.tscn
 g_logger.gd::GDScript::7217268201902530537::1763118416::0::1::::GLogger<>RefCounted<><>0<>0<><>::
 g_post_processing.gd::GDScript::3959649766264203499::1763118416::0::1::::GPostProcessing<>CanvasLayer<><>0<>0<><>::
@@ -86,8 +86,8 @@ colorblind.gdshader::Shader::1468376337301575048::1763118416::0::1::::<><><>0<>0
 gamma.gdshader::Shader::3364512786850272572::1763118416::0::1::::<><><>0<>0<><>::
 level_shadows.gdshader::Shader::7000884561908172222::1763118416::0::1::::<><><>0<>0<><>::
 sprite_shader.gdshader::Shader::9015217891126761522::1763118416::0::1::::<><><>0<>0<><>::
-::res://content/ui/::1763138386
-ui_theme.tres::Theme::4919690937199301398::1763137851::0::1::::<><><>0<>0<><>::
+::res://content/ui/::1763140575
+ui_theme.tres::Theme::4919690937199301398::1763140575::0::1::::<><><>0<>0<><>::
 ::res://content/ui/credits_menu/::1763121214
 credits_menu.gd::GDScript::194731572532647817::1763118416::0::1::::<>Control<><>0<>0<><>::
 credits_menu.tscn::PackedScene::8585109324499242939::1763118416::0::1::::<><><>0<>0<><>::uid://c1lg23m2wrkr::::res://content/ui/credits_menu/credits_menu.gd<>uid://cf0bkbnb0ex20::::res://content/ui/template/button_template.tscn<>uid://ccdeudfc5q0gg::::res://content/ui/ui_theme.tres
