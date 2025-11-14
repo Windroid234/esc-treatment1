@@ -1,0 +1,13 @@
+res://content/ui/main_menu/main_menu.tscn
+res://content/ui/ui_theme.tres
+res://content/level/first_level/new_tile_set.tres
+res://content/level/first_level/meta_tileset.tres
+res://content/ui/main_menu/main_menu.gd
+res://content/ui/credits_menu/credits_menu.tscn
+res://content/entity/player/player.tscn
+res://content/level/first_level/first_level.tscn
+res://content/effects/enemy/death_effect.gd
+res://content/ui/template/button_template.gd
+res://content/entity/player/player.gd
+res://content/effects/enemy/spawn_effect.gd
+res://content/effects/sound.gd
