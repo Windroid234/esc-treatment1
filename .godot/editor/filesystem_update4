@@ -1,5 +1,5 @@
-res://test.tscn
-res://content/ui/ui_theme.tres
-res://content/entity/player/player.tscn
-res://content/entity/player/player.gd
+res://content/global/g_game_globals.gd
 res://room_1.tscn
+res://content/ui/ui_theme.tres
+res://door.gd
+res://door_room.gd

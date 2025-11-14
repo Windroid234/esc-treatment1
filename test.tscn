@@ -454,4 +454,5 @@ position = Vector2(123, -31)
 scale = Vector2(9, 9)
 
 [node name="Area2D" parent="TileMap" instance=ExtResource("3_6uqi0")]
+target_scene = "res://room_1.tscn"
 position = Vector2(26, -150)
