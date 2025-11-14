@@ -1,9 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2whtobxgnksr"]
+[gd_scene load_steps=2 format=3 uid="uid://bydm0fahkvoed"]
 
-[ext_resource type="Script" uid="uid://bfk4s8asp4x7n" path="res://content/ui/main_menu/main_menu.gd" id="1_utroe"]
+[sub_resource type="GDScript" id="GDScript_rhts7"]
+script/source = "extends CanvasLayer
+
+
+
+func _on_play_button_pressed():
+	print(\"start\")
+	get_tree().change_scene_to_file(\"res://test.tscn\")
+
+
+func _on_quit_button_pressed() -> void:
+	get_tree().quit()
+"
 
 [node name="MainMenu" type="CanvasLayer"]
-script = ExtResource("1_utroe")
+script = SubResource("GDScript_rhts7")
 
 [node name="BGColor" type="ColorRect" parent="."]
 anchors_preset = 15
