@@ -1,8 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://c3xi6gmcnve3f"]
 
 [ext_resource type="Script" uid="uid://wy23toqiwmx1" path="res://content/entity/player/player.gd" id="1_7cqud"]
+[ext_resource type="Texture2D" uid="uid://bawamyypa2s4e" path="res://door/door-1.png" id="2_cxfm1"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_x7j6f"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cxfm1"]
+size = Vector2(20, 7.2851105)
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("mov_body", "sprite", "camera")]
 y_sort_enabled = true
@@ -17,10 +19,13 @@ camera = NodePath("Camera2D")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 1
 y_sort_enabled = true
+scale = Vector2(0.25, 0.325)
+texture = ExtResource("2_cxfm1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.49999976)
 scale = Vector2(0.35999984, 0.96086395)
-shape = SubResource("CircleShape2D_x7j6f")
+shape = SubResource("RectangleShape2D_cxfm1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(0.997337, 1)
