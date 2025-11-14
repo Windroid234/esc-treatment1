@@ -58,25 +58,7 @@ void fragment() {
 
 
 func _process(_delta: float) -> void:
-	if _darkness_rect == null:
-		return
-	if GEntityAdmin.player == null:
-		return
-	var player = GEntityAdmin.player
-	var cam = player.camera
-	if cam == null:
-		cam = get_viewport().get_camera_2d()
-		if cam == null:
-			return
-	var vp_size = get_viewport().get_visible_rect().size
-	var cam_xform = cam.get_camera_transform()
-	var screen_pos = cam_xform.xform(player.global_position)
-	var uv = Vector2(screen_pos.x / vp_size.x, screen_pos.y / vp_size.y)
-	if uv.x < 0 or uv.x > 1 or uv.y < 0 or uv.y > 1:
-		# clamp to viewport to avoid shader issues
-		uv.x = clamp(uv.x, 0.0, 1.0)
-		uv.y = clamp(uv.y, 0.0, 1.0)
-	_darkness_rect.material.set_shader_parameter("light_pos", uv)
+	return
 
 
 
