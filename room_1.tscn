@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=4 uid="uid://k7f64bc03ucy"]
+[gd_scene load_steps=9 format=4 uid="uid://k7f64bc03ucy"]
 
 [ext_resource type="Texture2D" uid="uid://cm3575oq0frjv" path="res://Inside_C.png" id="1_3t5sg"]
+[ext_resource type="PackedScene" uid="uid://c3xi6gmcnve3f" path="res://content/entity/player/player.tscn" id="2_4ikea"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ikea"]
 texture = ExtResource("1_3t5sg")
@@ -1239,3 +1240,6 @@ tile_set = SubResource("TileSet_yutty")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_hrfef")
+
+[node name="Player" parent="." instance=ExtResource("2_4ikea")]
+position = Vector2(0, -10)
