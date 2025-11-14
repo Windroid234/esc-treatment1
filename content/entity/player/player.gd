@@ -11,8 +11,6 @@ var can_move: bool = true
 func _ready() -> void:
 	self.name = "Player"
 	GEntityAdmin.register_entity(self)
-	
-	# Spawn at spawn point if available
 	var spawn_point = get_parent().find_child("SpawnPoint", true, false)
 	if spawn_point != null:
 		global_position = spawn_point.global_position
