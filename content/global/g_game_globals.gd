@@ -11,6 +11,7 @@ func _ready() -> void:
 
 
 var _scene_overlay: ColorRect = null
+var _darkness_rect: ColorRect = null
 const FADE_TIME: float = 0.25
 
 
@@ -25,7 +26,58 @@ func _create_scene_overlay() -> void:
 	_scene_overlay.color = Color(0, 0, 0, 0)
 	_scene_overlay.set_anchors_preset(Control.PRESET_FULL_RECT)
 	_scene_overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
+
+	var darkness = ColorRect.new()
+	darkness.name = "DarknessOverlay"
+	darkness.color = Color(0, 0, 0, 0.85)
+	darkness.set_anchors_preset(Control.PRESET_FULL_RECT)
+	darkness.mouse_filter = Control.MOUSE_FILTER_IGNORE
+
+	var sh := Shader.new()
+	sh.code = """
+shader_type canvas_item;
+uniform vec2 light_pos : hint_range(0.0, 1.0) = vec2(0.5, 0.5);
+uniform float radius : hint_range(0.0, 1.0) = 0.2;
+uniform float softness : hint_range(0.0, 1.0) = 0.12;
+void fragment() {
+    vec2 uv = SCREEN_UV;
+    float d = distance(uv, light_pos);
+    float a = smoothstep(radius, radius + softness, d);
+    COLOR = vec4(0.0, 0.0, 0.0, a);
+}
+"""
+
+	var mat := ShaderMaterial.new()
+	mat.shader = sh
+	darkness.material = mat
+
+	layer.add_child(darkness)
 	layer.add_child(_scene_overlay)
+
+	_darkness_rect = darkness
+
+
+func _process(_delta: float) -> void:
+	if _darkness_rect == null:
+		return
+	if GEntityAdmin.player == null:
+		return
+	var player = GEntityAdmin.player
+	var cam = player.camera
+	if cam == null:
+		cam = get_viewport().get_camera_2d()
+		if cam == null:
+			return
+	var vp_size = get_viewport().get_visible_rect().size
+	var cam_xform = cam.get_camera_transform()
+	var screen_pos = cam_xform.xform(player.global_position)
+	var uv = Vector2(screen_pos.x / vp_size.x, screen_pos.y / vp_size.y)
+	if uv.x < 0 or uv.x > 1 or uv.y < 0 or uv.y > 1:
+		# clamp to viewport to avoid shader issues
+		uv.x = clamp(uv.x, 0.0, 1.0)
+		uv.y = clamp(uv.y, 0.0, 1.0)
+	_darkness_rect.material.set_shader_parameter("light_pos", uv)
+
 
 
 

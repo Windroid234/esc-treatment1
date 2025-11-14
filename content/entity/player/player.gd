@@ -3,6 +3,7 @@ class_name Player extends Node2D
 @export var mov_body: CharacterBody2D
 @export var sprite: Sprite2D
 @export var camera: Camera2D
+@export var default_camera_zoom: Vector2 = Vector2(4.0, 4.0)
 
 var mov_speed: float = 300.0
 var can_move: bool = true
@@ -16,7 +17,7 @@ func _ready() -> void:
 		global_position = spawn_point.global_position
 	
 	if camera != null:
-		camera.zoom = Vector2(2.5, 2.5)
+		camera.zoom = default_camera_zoom
 
 
 func _physics_process(_delta: float) -> void:

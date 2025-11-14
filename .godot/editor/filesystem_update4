@@ -3,3 +3,4 @@ res://content/global/g_game_globals.gd
 res://content/ui/ui_theme.tres
 res://content/ui/title_screen/title_screen.gd
 res://room_1.tscn
+res://content/entity/player/player.gd
