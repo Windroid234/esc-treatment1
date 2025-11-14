@@ -31,6 +31,11 @@ func _ready() -> void:
 	add_child(level_timer)
 	level_timer.start()
 
+func _input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and event.keycode == KEY_ESCAPE:
+		print("ESC pressed - returning to main menu")
+		get_tree().change_scene_to_file("res://content/ui/main_menu/main_menu.tscn")
+
 ## Update the time elapsed.
 func update_time() -> void:
 	if hold_time:
