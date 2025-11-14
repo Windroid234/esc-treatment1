@@ -47,3 +47,6 @@ level_modulate = NodePath("../CanvasModulate")
 
 [node name="SpawnPoint" parent="." instance=ExtResource("5_spawn_point")]
 position = Vector2(0, -58)
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
