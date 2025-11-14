@@ -1,3 +1,4 @@
+CollisionShape2D
 Label
 ColorRect
 Button
@@ -6,7 +7,6 @@ TextureRect
 TileMap
 AnimatedSprite2D
 TileMapLayer
-CollisionShape2D
 Sprite2D
 Area2D
 CharacterBody2D

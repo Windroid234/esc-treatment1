@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Esc-Treatment"
 config/version="0.7"
-run/main_scene="uid://b62x30omdchan"
+run/main_scene="uid://c3xi6gmcnve3f"
 config/features=PackedStringArray("4.5", "Forward Plus")
 run/max_fps=120
 boot_splash/bg_color=Color(0.109804, 0.105882, 0.105882, 1)
@@ -26,6 +26,7 @@ buses/default_bus_layout="res://content/global/audio_bus_layout.tres"
 
 GGameRoot="*res://content/global/g_game_root.tscn"
 ImGuiRoot="*res://addons/imgui-godot/data/ImGuiRoot.tscn"
+#TemporarilydisabledImGuiautoloadtoavoiddebugsubmenucompile-timeerrorsthat#cancrashtheprojectonstartup.Re-enablewhendebugscriptsarefixed.#ImGuiRoot="*res://addons/imgui-godot/data/ImGuiRoot.tscn"
 
 [display]
 

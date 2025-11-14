@@ -1378,10 +1378,10 @@ tile_set = SubResource("TileSet_yutty")
 tile_set = SubResource("TileSet_hrfef")
 
 [node name="Player" parent="." instance=ExtResource("2_4ikea")]
-position = Vector2(-10, -33)
-scale = Vector2(9, 9)
+position = Vector2(0, -21)
+scale = Vector2(1.5, 1.5)
 
 [node name="Area2D" parent="." instance=ExtResource("4_bq48c")]
+position = Vector2(-52, -54)
 target_scene = "res://test.tscn"
 block_until_papers = true
-position = Vector2(-52, -54)

@@ -14,6 +14,7 @@ var _scene_overlay: ColorRect = null
 var _light_sprite: Sprite2D = null
 var _canvas_modulate: CanvasModulate = null
 const FADE_TIME: float = 0.25
+var _global_dim_enabled: bool = true
 
 # Paper / collectible tracking (level-local, simple global helper)
 var _papers_found: Dictionary = {}
@@ -41,6 +42,21 @@ func _create_scene_overlay() -> void:
 	canvas_mod.color = Color(0.3, 0.3, 0.3, 1.0)
 	add_child(canvas_mod)
 	_canvas_modulate = canvas_mod
+
+
+## Enable or disable the global dimming effect applied via CanvasModulate.
+## When disabled, the CanvasModulate color is set to neutral (white) so UI menus
+## can appear at full brightness. Call `set_global_dim(true)` to restore dimming.
+func set_global_dim(enabled: bool) -> void:
+	_global_dim_enabled = enabled
+	if _canvas_modulate == null:
+		return
+	if enabled:
+		# restore the intended dim color
+		_canvas_modulate.color = Color(0.3, 0.3, 0.3, 1.0)
+	else:
+		# neutral color so nothing is dimmed
+		_canvas_modulate.color = Color(1, 1, 1, 1)
 
 	var light_circle = Sprite2D.new()
 	light_circle.name = "LightHalo"
