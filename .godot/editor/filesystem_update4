@@ -1,6 +1,5 @@
-res://content/entity/player/player.tscn
+res://test.tscn
 res://content/ui/ui_theme.tres
-<<<<<<< HEAD
-res://content/global/g_game_globals.gd
-=======
->>>>>>> 292fe1ad327d8190e9f7f2f27f33e9b57e891f47
+res://content/entity/player/player.tscn
+res://content/entity/player/player.gd
+res://room_1.tscn
