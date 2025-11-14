@@ -451,7 +451,8 @@ layer_0/tile_data = PackedInt32Array(-327691, 786432, 36, -262155, 786432, 37, -
 
 [node name="Player" parent="TileMap" instance=ExtResource("2_8uh7m")]
 position = Vector2(123, -31)
-scale = Vector2(4.8433037, 3.6319842)
+scale = Vector2(9, 9)
 
 [node name="Area2D" parent="TileMap" instance=ExtResource("3_6uqi0")]
+target_scene = "res://room_1.tscn"
 position = Vector2(26, -150)
