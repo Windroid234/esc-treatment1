@@ -10,14 +10,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("mov_body", "sprite", "camera")]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("mov_body", "camera")]
 y_sort_enabled = true
 collision_layer = 2
 collision_mask = 9
 motion_mode = 1
 script = ExtResource("1_7cqud")
 mov_body = NodePath(".")
-sprite = NodePath("")
 camera = NodePath("Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]

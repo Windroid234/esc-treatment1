@@ -1,2 +1,3 @@
 res://content/entity/player/player.tscn
-res://content/ui/ui_theme.tres
+res://menu.tscn
+res://menu.gd

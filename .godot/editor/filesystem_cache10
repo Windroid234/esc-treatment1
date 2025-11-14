@@ -1,18 +1,19 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763140983
+::res://::1763148161
 door.gd::GDScript::908582878560824339::1763138386::0::1::::<>Area2D<><>0<>0<><>::
 door.tscn::PackedScene::7462812676297782837::1763138386::0::1::::<><><>0<>0<><>::uid://m7ehyyno1thj::::res://door.gd<>uid://bawamyypa2s4e::::res://door/door-1.png
 first_level.tscn::PackedScene::8276642818546415081::1763118416::0::1::::<><><>0<>0<><>::uid://c4xdanqs688qd::::res://content/first_level/first_level.tscn
 Idle.png::CompressedTexture2D::2890108387361361867::1763140541::1763140541::1::::<><><>0<>0<>0e7953150ecfa03b18d1061d9b13b45b<>res://.godot/imported/Idle.png-4c259d6ef325ec19f29f7f8c54bbbb14.ctex::
 Inside_C.png::CompressedTexture2D::5674790321432572867::1763121921::1763121921::1::::<><><>0<>0<>67f348e78fc1fb111def49cbc55066e4<>res://.godot/imported/Inside_C.png-ea7911097d3e123af6f3b047575ef3e4.ctex::
-main_menu.tscn::PackedScene::4077919575977881323::1763122509::0::1::::<><><>0<>0<><>::
+menu.tscn::PackedScene::4619460864155020905::1763147840::0::1::::<><><>0<>0<><>::uid://clm2hltxs2ouu::::res://menu.gd<>uid://cpdvl7iikiy6j::::res://TEXT/Bauhaus 93 Regular.ttf
+menu.gd::GDScript::5571343647993586828::1763147840::0::1::::<>Control<><>0<>0<><>::
 room_1.tscn::PackedScene::768308993932482332::1763138059::0::1::::<><><>0<>0<><>::uid://cm3575oq0frjv::::res://Inside_C.png<>uid://c3xi6gmcnve3f::::res://content/entity/player/player.tscn
 test.tscn::PackedScene::612850826894185950::1763140575::0::1::::<><><>0<>0<><>::uid://cm3575oq0frjv::::res://Inside_C.png<>uid://c3xi6gmcnve3f::::res://content/entity/player/player.tscn<>uid://delbo1hsthreb::::res://door.tscn
 ::res://addons/::1763118416
 ::res://addons/godot-rapier2d/::1763118416
 godot-rapier2d.gdextension::GDExtension::860326987334646388::1763118416::0::1::::<><><>0<>0<><>::
 THIRDPARTY.txt::TextFile::-1::1763118415::0::1::::<><><>0<>0<><>::
-::res://addons/godot-rapier2d/bin/::1763140971
+::res://addons/godot-rapier2d/bin/::1763143303
 ::res://addons/godot-rapier2d/bin/libphysics_server_rapier2d.ios.template_debug.framework/::1763118415
 ::res://addons/godot-rapier2d/bin/libphysics_server_rapier2d.ios.template_release.framework/::1763118415
 ::res://addons/godot-rapier2d/bin/libphysics_server_rapier2d.macos.template_debug.framework/::1763118415
@@ -24,7 +25,7 @@ THIRDPARTY.txt::TextFile::-1::1763118415::0::1::::<><><>0<>0<><>::
 ::res://addons/imgui-godot/::1763118416
 imgui-godot-native.gdextension::GDExtension::4120062672281317713::1763118416::0::1::::<><><>0<>0<><>::
 plugin.cfg::TextFile::-1::1763118416::0::1::::<><><>0<>0<><>::
-::res://addons/imgui-godot/bin/::1763140974
+::res://addons/imgui-godot/bin/::1763143306
 ::res://addons/imgui-godot/bin/libimgui-godot-native.macos.debug.framework/::1763118416
 ::res://addons/imgui-godot/bin/libimgui-godot-native.macos.release.framework/::1763118416
 ::res://addons/imgui-godot/data/::1763136708
@@ -35,7 +36,7 @@ ImGuiConfig.gd::GDScript::8088901182877848053::1763118416::0::1::::ImGuiConfig<>
 ImGuiFont.gd::GDScript::4439172401200143663::1763118416::0::1::::ImGuiFont<>Resource<><>0<>0<><>::
 ImGuiPlugin.gd::GDScript::6322692765781581939::1763118416::0::1::::<>EditorPlugin<><>0<>1<><>::
 ImGuiRoot.gd::GDScript::6359395155516378386::1763118416::0::1::::<>Node<><>0<>0<><>::
-::res://content/::1763118416
+::res://content/::1763143987
 ::res://content/config/::1763118416
 local_settings.gd::GDScript::3169916239790716075::1763118416::0::1::::LocalSettings<>RefCounted<><>0<>0<><>::
 ::res://content/debug/::1763118416
@@ -57,9 +58,9 @@ damage_fx.gd::GDScript::8006436056966232065::1763118416::0::1::::<>GPUParticles2
 damage_fx.tscn::PackedScene::5285375887152468618::1763118416::0::1::::<><><>0<>0<><>::res://content/effects/damage/damage_fx.gd
 damage_numbers.tscn::PackedScene::1681538009349514080::1763118416::0::1::::<><><>0<>0<><>::uid://xtswn0x4352w::::res://assets/fonts/WhitePeaberry.fnt
 ::res://content/entity/::1763118416
-::res://content/entity/player/::1763140348
+::res://content/entity/player/::1763144358
 player.gd::GDScript::1595390007477630088::1763140348::0::1::::Player<>Node2D<><>0<>0<><>::
-player.tscn::PackedScene::6786151106934495237::1763136672::0::1::::<><><>0<>0<><>::uid://wy23toqiwmx1::::res://content/entity/player/player.gd<>uid://bawamyypa2s4e::::res://door/door-1.png
+player.tscn::PackedScene::6786151106934495237::1763144357::0::1::::<><><>0<>0<><>::uid://wy23toqiwmx1::::res://content/entity/player/player.gd
 ::res://content/global/::1763140951
 audio_bus_layout.tres::AudioBusLayout::9044126520073408996::1763118416::0::1::::<><><>0<>0<><>::
 g_game_globals.gd::GDScript::633568954108631455::1763140951::0::1::::GGameGlobals<>Node<><>0<>0<><>::
@@ -86,25 +87,6 @@ colorblind.gdshader::Shader::1468376337301575048::1763118416::0::1::::<><><>0<>0
 gamma.gdshader::Shader::3364512786850272572::1763118416::0::1::::<><><>0<>0<><>::
 level_shadows.gdshader::Shader::7000884561908172222::1763118416::0::1::::<><><>0<>0<><>::
 sprite_shader.gdshader::Shader::9015217891126761522::1763118416::0::1::::<><><>0<>0<><>::
-::res://content/ui/::1763140575
-ui_theme.tres::Theme::4919690937199301398::1763140575::0::1::::<><><>0<>0<><>::
-::res://content/ui/credits_menu/::1763121214
-credits_menu.gd::GDScript::194731572532647817::1763118416::0::1::::<>Control<><>0<>0<><>::
-credits_menu.tscn::PackedScene::8585109324499242939::1763118416::0::1::::<><><>0<>0<><>::uid://c1lg23m2wrkr::::res://content/ui/credits_menu/credits_menu.gd<>uid://cf0bkbnb0ex20::::res://content/ui/template/button_template.tscn<>uid://ccdeudfc5q0gg::::res://content/ui/ui_theme.tres
-title.png::CompressedTexture2D::328777967474612528::1763118416::1763121214::1::::<><><>0<>0<>9a3aff836710a33b49a79177ae922498<>res://.godot/imported/title.png-e5d0f360a8a65648d643950996ed0efd.ctex::
-::res://content/ui/gameover_menu/::1763118416
-gameover_menu.gd::GDScript::1724989788452133326::1763118416::0::1::::<>CanvasLayer<><>0<>0<><>::
-gameover_menu.tscn::PackedScene::5551286009677097779::1763118416::0::1::::<><><>0<>0<><>::res://content/ui/gameover_menu/gameover_menu.gd<>uid://xtswn0x4352w::::res://assets/fonts/WhitePeaberry.fnt<>uid://cf0bkbnb0ex20::::res://content/ui/template/button_template.tscn
-::res://content/ui/pause_menu/::1763118416
-pause_menu.gd::GDScript::1346862026788284349::1763118416::0::1::::<>Control<><>0<>0<><>::
-pause_menu.tscn::PackedScene::5948549359928475379::1763118416::0::1::::<><><>0<>0<><>::res://content/ui/pause_menu/pause_menu.gd<>uid://cf0bkbnb0ex20::::res://content/ui/template/button_template.tscn<>uid://cklgwuj5b5q5p::::res://content/ui/settings_menu/settings_menu.tscn<>uid://xtswn0x4352w::::res://assets/fonts/WhitePeaberry.fnt
-::res://content/ui/settings_menu/::1763118416
-settings_menu.gd::GDScript::8381989314976959999::1763118416::0::1::::<>Control<><>0<>0<><>::
-settings_menu.tscn::PackedScene::5497842614219530315::1763118416::0::1::::<><><>0<>0<><>::uid://xtswn0x4352w::::res://assets/fonts/WhitePeaberry.fnt<>res://content/ui/settings_menu/settings_menu.gd<>uid://ccdeudfc5q0gg::::res://content/ui/ui_theme.tres<>uid://cf0bkbnb0ex20::::res://content/ui/template/button_template.tscn
-::res://content/ui/template/::1763121213
-button_template.gd::GDScript::1422798384520690107::1763118416::0::1::::<>Button<><>0<>0<><>::
-button_template.tscn::PackedScene::5175473677044509979::1763118416::0::1::::<><><>0<>0<><>::uid://xtswn0x4352w::::res://assets/fonts/WhitePeaberry.fnt<>uid://ccdeudfc5q0gg::::res://content/ui/ui_theme.tres<>res://content/ui/template/button_template.gd
-button_test.png::CompressedTexture2D::8330666218729631687::1763118416::1763121213::1::::<><><>0<>0<>c4afb5cfa42594ed19da2a25613f0109<>res://.godot/imported/button_test.png-e34fa248c65087851be14b9815ac3243.ctex::
 ::res://content/util/::1763118416
 circ_buffer.gd::GDScript::8118114956186426160::1763118416::0::1::::CircBuffer<>RefCounted<><>0<>0<><>::
 math.gd::GDScript::3109851392798647637::1763118416::0::1::::Math<>RefCounted<><>0<>0<><>::
@@ -114,3 +96,11 @@ door-1.png::CompressedTexture2D::2431859722127598686::1763128109::1763128109::1:
 ::res://player w + i/::1763140538
 Idle.png::CompressedTexture2D::15779473903207871::1763140537::1763140538::1::::<><><>0<>0<>e7d291f979cc8eb61c169250f9807f25<>res://.godot/imported/Idle.png-2724cc753ad3daed8f7ae659d25c5cb7.ctex::
 walk.png::CompressedTexture2D::693399402666181598::1763140523::1763140481::1::::<><><>0<>0<>0c1d00297ab9a3dfee6d3a27513e0a13<>res://.godot/imported/walk.png-0c9138922962ed1a90335ab01423630b.ctex::
+::res://sound/::1763148180
+closing-large-metal-door-003-369393.mp3::AudioStreamMP3::7202424792331150472::1763148180::1763148181::1::::<><><>0<>0<>f6373847d185f135a7028fc15de6630c<>res://.godot/imported/closing-large-metal-door-003-369393.mp3-90c126c3719039eb26492965fd5276f1.mp3str::
+unlocking-metal-door-44281.mp3::AudioStreamMP3::4909241787585983825::1763148176::1763148176::1::::<><><>0<>0<>fbf2fe277083ba21b925f748df487faf<>res://.godot/imported/unlocking-metal-door-44281.mp3-810eb946c0aa39a23b561a8d4f9bea38.mp3str::
+::res://TEXT/::1763145345
+Bauhaus 93 Regular.ttf::FontFile::5833163549282746727::1763145344::1763145345::1::::<><><>0<>0<>3b9327adbf6de02a08337a71e7c6b9cc<>res://.godot/imported/Bauhaus 93 Regular.ttf-cad5537617d30b96886777752ddd3d80.fontdata::
+::res://ui/::1763144733
+FreeHorrorUi.png::CompressedTexture2D::6379047207872118568::1763144004::1763144005::1::::<><><>0<>0<>42959b669da0a7a128857608133aad05<>res://.godot/imported/FreeHorrorUi.png-9cb3d8f495af5698b8135b48ec1e9230.ctex::
+start_.png::CompressedTexture2D::3836900484035336228::1763144733::1763144733::1::::<><><>0<>0<>46b451cb298a51ed797bf3acbffc8afa<>res://.godot/imported/start_.png-b3b36daa5149bcc035d473a216b1451f.ctex::
